@@ -1,0 +1,38 @@
+<ion-view style="background-color: #272733;" can-swipe-back="false">
+
+    <ion-header-bar class="bar-dark" align-title="center">
+        <h1 class="title">Events</h1>
+    </ion-header-bar>
+
+    <ion-content class="has-header">
+
+
+        <div ng-hide="!vm.noEvents">
+
+            <ion-list>
+                <ion-item ng-click="vm.onItemSelected($index)" ng-repeat="event in vm.events">
+                    {{event.name}}
+                </ion-item>
+            </ion-list>
+
+        </div>
+
+
+
+        <div ng-hide="!vm.noEvents" style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h1 class="light">No Items Yet!</h1>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar class="bar bar-dark bar-footer row" style="position:fixed; bottom:0px; padding: 0px;">
+        <i class="col-20"></i>
+
+        <button class="button button-positive col" style="margin: 5px; color: white;" ng-click="vm.update()" style="position: absolute; width: 50%; left: 50%; transform: translate(-50%,0%);">
+            Update
+        </button>
+
+        <i class="col-20"></i>
+    </ion-footer-bar>
+
+</ion-view>
