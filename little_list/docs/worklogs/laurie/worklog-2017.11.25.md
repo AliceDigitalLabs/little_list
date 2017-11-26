@@ -173,7 +173,41 @@ Fixed the .git ignore. Hoping this now works OK! Will check-in and do another ch
 
 
 
+-------------------------
 
+2017-11-26 20:52:10 
+
+Downloaded fresh from https://github.com/AliceDigitalLabs/little_list
+
+Expanded .zip 
+
+```
+adanac:little_list coops$ npm install
+npm WARN little_list@0.0.1 No repository field.
+npm WARN little_list@0.0.1 No license field.
+``` 
+
+Tried
+
+```
+ionic cordova add android
+```
+
+but got error saying platform already exsits. This is because it exists in the ionic side of things. But we know it doesn't exist in the cordova side of things, because we didn't check it in. We just need to do this:
+
+```
+cordova add android
+```
+
+so that the the plaform is added properly to the filesystem.
+
+Now the 
+
+```
+ionic cordova run android 
+```
+
+works fine :-)
 
 
 
