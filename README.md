@@ -30,8 +30,10 @@ npm install -g cordova
 
 * Install ionic
 ```
-npm install -g ionic
-```
+npm install -g ionic@3.20.0
+```  
+
+Note: The latest version (4.3) of the Ionic CLI contains a breaking change. Make sure you use the above version: 3.20.0
 
 
 * check your installation:
@@ -47,7 +49,7 @@ For cordova:
 cordova -v
 ```
 
-... you may get a complaint that windows can't find ionic. This is largely due to the way that the OS has been set up with raoming profiles, so that you can use many machines if you need to.
+... you may get a complaint that windows can't find ionic. This is largely due to the way that the OS has been set up with roaming profiles, so that you can use many machines if you need to.
 
 if this happens, it means that you must put npm in your PATH
 
@@ -84,9 +86,12 @@ We're running version 4.10
  ```
  * Extract the contents of the .zip file here.
  * Note that you just installed the tool on your shared drive. This means you'll be able to build when you use another machine.
- * You now need to add the this location to your PATH environemtn variable.
-
-
+ * You now need to add the location of the Gradle binaries to your PATH environmnent variable:
+ 
+ For example:
+ ```
+ H:\Documents\Gradle\gradle-4.10.2\bin
+ ```
 
 
 * you will need to add the ionic v1 toolkit  package to the ionic CLI:
