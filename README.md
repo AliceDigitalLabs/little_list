@@ -3,7 +3,6 @@ a simple ionic + cordova app which displays a list of canned events, and navigat
 
 ## Quick Start
 
-
 ionic cordova platform add android
 
 ionic cordova run android
@@ -57,6 +56,8 @@ if this happens, it means that you must put npm in your PATH
 ```
 C:\Users\<your windows login number>\AppData\Roaming\npm
 ```
+What's a user environment variable? ([Windows](https://www.computerhope.com/issues/ch000549.htm))
+
 
 When you can successfully run ionic, you're on to trying a build!  
 
